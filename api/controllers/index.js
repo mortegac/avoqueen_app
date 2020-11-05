@@ -1,8 +1,10 @@
 const userCtrl = require('./user.controller');
-const favoriteCtrl = require('./favorites.controller');
+const clientCtrl = require('./client.ctrl');
+const productCtrl = require('./product.ctrl');
 
 
 module.exports = {
     userCtrl,
-    favoriteCtrl,
+    clientCtrl,
+    productCtrl,
 }

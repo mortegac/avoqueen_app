@@ -1,0 +1,71 @@
+# ------------------------------------------------------
+#        EJECUTAR ENDPOINT
+#        [OPTION] + [COMMAND] + [R]
+#        [CMD] + [ALT] + L
+# ------------------------------------------------------
+
+# AUTH
+# ------------------------------------------------------
+POST http://localhost:5000/api/user/login HTTP/1.1
+content-type: application/json
+
+{
+    "username":"manu",  
+    "password": "asdf45"
+}
+
+
+# USER
+# ------------------------------------------------------
+GET http://localhost:5000/api/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYTM0MjlkYjAxZDA2OGYwZTUwZDllYyIsImlhdCI6MTYwNDU0MTk5MiwiZXhwIjoxNjA3MTMzOTkyfQ.NOI9MDAtn7H2w0Ay7HDqhitdeLXQY0RgZ8S0kwGpOyU
+
+POST http://localhost:5000/api/user HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYTM0MjlkYjAxZDA2OGYwZTUwZDllYyIsImlhdCI6MTYwNDU0MTk5MiwiZXhwIjoxNjA3MTMzOTkyfQ.NOI9MDAtn7H2w0Ay7HDqhitdeLXQY0RgZ8S0kwGpOyU
+
+{
+    "username":"nico",  
+    "password": "12345",
+    "email" :"nicoleriver@gmail.com"
+}
+
+
+
+
+# PRODUCTS
+# ------------------------------------------------------
+
+
+
+# CLIENT
+# ------------------------------------------------------
+
+GET http://localhost:5000/api/client
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYTM0MjlkYjAxZDA2OGYwZTUwZDllYyIsImlhdCI6MTYwNDU0MTk5MiwiZXhwIjoxNjA3MTMzOTkyfQ.NOI9MDAtn7H2w0Ay7HDqhitdeLXQY0RgZ8S0kwGpOyU
+
+POST http://localhost:5000/api/client HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYTM0MjlkYjAxZDA2OGYwZTUwZDllYyIsImlhdCI6MTYwNDU0MTk5MiwiZXhwIjoxNjA3MTMzOTkyfQ.NOI9MDAtn7H2w0Ay7HDqhitdeLXQY0RgZ8S0kwGpOyU
+
+{
+    "name":"Nicole Rivera",  
+    "email": "nicoleriver@gmail.com",
+    "phones" :{"movil": "+56996970115"},
+    "address" :{
+        "casa": "Antupiren 10001, casa K, Peñalolen",
+        "casa2": "Avenida Las lomas 1255, depto 532, Papudo"
+    }
+}
+
+
+
+# ORDERS - VENTAS
+# ------------------------------------------------------
+
+
+
+# COMPRAS
+# ------------------------------------------------------
+
+
