@@ -1,0 +1,6 @@
+MONGO_ROLE=admin
+MONGO_USERNAME=fullstacksodimac
+MONGO_PASSWORD=Sodimac.,123
+MONGO_HOSTNAME=cluster0.9ap7o.gcp.mongodb.net
+MONGO_PORT=27017
+MONGO_DB=sodimac
