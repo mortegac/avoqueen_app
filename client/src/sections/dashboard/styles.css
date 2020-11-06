@@ -1,0 +1,90 @@
+.react-rainbow-admin-dashboard_view-port {
+    padding: 16px 40px 24px 40px;
+}
+
+.react-rainbow-admin-dashboard_card {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.react-rainbow-admin-dashboard_card:not(:last-child) {
+    margin-right: 24px;
+}
+
+.react-rainbow-admin-dashboard_card--content {
+    font-size: 28px;
+    line-height: 1.07;
+    letter-spacing: 1.8px;
+}
+
+.react-rainbow-admin-dashboard_badge--success {
+    background-color: #1de9b6 !important;
+    align-self: flex-start;
+}
+
+.react-rainbow-admin-dashboard_badge--error {
+    background-color: #fe4849 !important;
+    align-self: flex-start;
+}
+
+.react-rainbow-admin-dashboard_chart-title {
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.react-rainbow-admin-dashboard_avatar {
+    flex-shrink: 0;
+}
+
+.react-rainbow-admin-dashboard_divider {
+    border-bottom: solid 1px #e3e5ed;
+}
+
+.react-rainbow-admin-dashboard_list-card--footer-link {
+    font-size: 13px;
+}
+
+.react-rainbow-admin-dashboard_list-card--footer-link:hover,
+.react-rainbow-admin-dashboard_list-card--footer-link:focus,
+.react-rainbow-admin-dashboard_list-card--footer-link:active,
+.react-rainbow-admin-dashboard_list-card--footer-link:visited {
+    color: #009acf;
+}
+
+.react-rainbow-admin-dashboard_card-users--user {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #fe4849;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.react-rainbow-admin-dashboard_card-users--user-active {
+    background-color: #1de9b6;
+}
+
+.react-rainbow-admin-dashboard_card-message--message-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.react-rainbow-admin-dashboard_tile-icon {
+    height: 37px;
+    width: 37px;
+}
+
+@media (max-width: 800px) {
+    .react-rainbow-admin-dashboard_view-port {
+        padding: 16px 16px 24px 16px;
+    }
+
+    .react-rainbow-admin-dashboard_section {
+        flex-direction: column;
+    }
+
+    .react-rainbow-admin-dashboard_card:not(:last-child) {
+        margin: 0 0 8px 0;
+    }
+}

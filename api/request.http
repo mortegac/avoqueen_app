@@ -36,6 +36,18 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYTM0MjlkY
 # PRODUCTS
 # ------------------------------------------------------
 
+GET http://localhost:5000/api/product
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYTM0MjlkYjAxZDA2OGYwZTUwZDllYyIsImlhdCI6MTYwNDU0MTk5MiwiZXhwIjoxNjA3MTMzOTkyfQ.NOI9MDAtn7H2w0Ay7HDqhitdeLXQY0RgZ8S0kwGpOyU
+
+POST http://localhost:5000/api/product HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYTM0MjlkYjAxZDA2OGYwZTUwZDllYyIsImlhdCI6MTYwNDU0MTk5MiwiZXhwIjoxNjA3MTMzOTkyfQ.NOI9MDAtn7H2w0Ay7HDqhitdeLXQY0RgZ8S0kwGpOyU
+
+{
+    "name":"Nicole Rivera",  
+    "stock": 200
+}
+
 
 
 # CLIENT
