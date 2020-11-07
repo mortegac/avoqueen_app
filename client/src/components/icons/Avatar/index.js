@@ -5,9 +5,11 @@ export default function Avatar(props) {
     const {
         className,
         style,
+        height,
+        width,
     } = props;
     return (
-        <svg className={className} style={style} height="32px" width="32px" version="1.1" viewBox="0 0 32 32">
+        <svg className={className} style={style} height={height} width={width} version="1.1" viewBox="0 0 32 32">
             <defs>
                 <rect height="32" id="path-1" width="32" rx="16" x="0" y="0" />
             </defs>
@@ -44,8 +46,12 @@ export default function Avatar(props) {
 Avatar.propTypes = {
     className: PropTypes.string,
     style: PropTypes.object,
+    height: PropTypes.string,
+    width: PropTypes.string,
 };
 Avatar.defaultProps = {
     className: undefined,
     style: undefined,
+    height: "32px",
+    width: "32px",
 };

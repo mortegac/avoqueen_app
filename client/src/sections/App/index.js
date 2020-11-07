@@ -17,12 +17,12 @@ import {
 } from 'react-router-dom';
 
 import history from './history';
-import Applications from '../applications';
 import Dashboard from '../dashboard';
 import Clients from '../clients';
 import Sales from '../sales';
 import Products from '../products';
 import Shopping from '../shopping';
+import RoutesSales from '../routesSales';
 import Notifications from '../notifications';
 import Profile from '../profile';
 
@@ -35,6 +35,7 @@ import {
     ShoppingCartIcon,
     Attach,
     PricingIcon,
+    GoogleIcon,
 } from '../../components/icons';
 
 
@@ -105,7 +106,14 @@ const App = (props)=>{
                         name="messages"
                         label="Compras"
                         onClick={ () => history.push('/compras') }
-                    />                   
+                    />
+                    <SidebarItem
+                        className="react-rainbow-admin-app_sidebar-item"
+                        icon={<GoogleIcon />}
+                        name="Rutas"
+                        label="Rutas"
+                        onClick={ () => history.push('/rutas') }
+                    /> 
                 </Sidebar>
                 <RenderIf isTrue={!isSidebarHidden}>
                     <div className="react-rainbow-admin-app_sidebar-back-button-container">
@@ -127,6 +135,8 @@ const App = (props)=>{
                             <Route exact path="/ventas" component={Sales} />
                             <Route exact path="/productos" component={Products} />
                             <Route exact path="/compras" component={Shopping} />
+                            <Route exact path="/rutas" component={RoutesSales} />
+
                             <Route exact path="/notificaciones" component={Notifications} />
                             <Route exact path="/perfil" component={Profile} />
                             
